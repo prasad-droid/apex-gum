@@ -213,6 +213,9 @@
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1200px) {
+            .benefits-bar{
+                position: static;
+            }
             .benefits-section {
                 padding: 3rem 3vw;
                 min-height: auto;
@@ -266,7 +269,7 @@
             }
 
             .benefits-top {
-                gap: 1.5rem;
+                gap: 0rem;
                 margin-bottom: 2rem;
             }
 
@@ -370,11 +373,12 @@
             }
 
             .benefits-bar {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
                 gap: 0.6rem;
                 padding: 1rem 1rem;
                 width: calc(100% + 2rem);
                 margin: 0 -1rem -1rem -1rem;
+                margin-top: 4rem;
             }
 
             .bar-item {
@@ -385,6 +389,7 @@
 
             .bar-item:last-child {
                 border-bottom: none;
+                grid-area: 3/1/4/3;
             }
 
             .bar-item-icon {
